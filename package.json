@@ -1,17 +1,17 @@
 {
   "name": "login-mern",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start":"server.js",
+    "start":"node server.js",
     "server":"nodemon server.js",
     "client":"cd clients && npm run start",
     "server-install":"npm install",
     "client-install":"cd clients && npm install",
     "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":"cd client && npm install && npm run build"
+    "heroku-postbuild":"cd clients && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
