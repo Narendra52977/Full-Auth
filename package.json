@@ -4,15 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start":"node server.js",
-    "server":"nodemon server.js",
-    "client":"cd clients && npm run start",
-    "server-install":"npm install",
-    "client-install":"cd clients && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd clients && npm run start",
+    "server-install": "npm install",
+    "client-install": "cd clients && npm install",
     "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-prebuild": "npm i -f",
-    "heroku-postbuild":"cd clients && npm install && npm run build"
+    "heroku-postbuild": "cd clients && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -34,7 +34,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.14"
-  },"optionalDependencies": {
+  },
+  "optionalDependencies": {
     "fsevents": "2.1.2"
   }
 }
